@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistik Belajar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Statistik Belajar</h1>
+    <canvas id="statistikChart"></canvas>
+
+    <!-- Pop-up Anomali -->
+    <div id="popup" class="popup">
+      <p>Terdeteksi Anomali: 3 minggu terakhir terjadi penurunan belajar. Apakah anda baik-baik saja?</p>
+      <button id="closePopup">Tutup</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
