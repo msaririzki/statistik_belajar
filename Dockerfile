@@ -10,9 +10,8 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Salin semua file aplikasi ke dalam kontainer
-COPY ./app ./app  
-COPY ./public ./public  
+# Salin semua file aplikasi dan folder ke dalam kontainer
+COPY . .
 
 # Ekspos port yang digunakan oleh aplikasi
 EXPOSE 3000
