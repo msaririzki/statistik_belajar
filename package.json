@@ -1,0 +1,13 @@
+{
+    "name": "statistik-belajar",
+    "version": "1.0.0",
+    "description": "Aplikasi statistik belajar dengan Docker, Node.js, dan Chart.js",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
