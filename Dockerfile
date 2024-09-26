@@ -1,20 +1,17 @@
-# Menggunakan Node.js versi resmi
+# Gunakan image Node.js
 FROM node:18
 
-# Membuat direktori aplikasi
+# Set direktori kerja
 WORKDIR /usr/src/app
 
-# Menyalin file package.json dan package-lock.json
+# Salin package.json dan package-lock.json
 COPY package*.json ./
 
-# Install dependencies
+# Install dependensi
 RUN npm install
 
-# Menyalin semua file proyek ke dalam image Docker
+# Salin seluruh aplikasi
 COPY . .
 
-# Mengekspos port 3000
-EXPOSE 3000
-
-# Menjalankan aplikasi
-CMD [ "node", "index.js" ]
+# Jalankan aplikasi
+CMD ["npm", "start"]
