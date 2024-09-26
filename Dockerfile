@@ -1,19 +1,20 @@
-# Gunakan gambar Node.js resmi sebagai base image
+# Gunakan image Node.js resmi
 FROM node:18
 
-# Set direktori kerja di dalam kontainer
+# Set direktori kerja
 WORKDIR /usr/src/app
 
-# Salin package.json dan package-lock.json ke dalam kontainer
+# Salin file package.json dan package-lock.json
 COPY package*.json ./
 
-# Install dependencies
+# Install dependensi
 RUN npm install
 
-# Salin semua file aplikasi dan folder ke dalam kontainer
+# Salin sisa file aplikasi
 COPY . .
 
-# Ekspos port yang digunakan oleh aplikasi
+
+# Expose port yang digunakan aplikasi
 EXPOSE 3000
 
 # Jalankan aplikasi
