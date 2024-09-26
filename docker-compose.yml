@@ -5,6 +5,6 @@ services:
     ports:
       - "4000:3000"
     volumes:
-      - ./app:/usr/src/app  # Pastikan menunjuk ke folder yang benar
+      - .:/usr/src/app  # Pastikan ini adalah jalur yang benar
     stdin_open: true
     tty: true
